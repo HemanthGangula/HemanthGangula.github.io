@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hemanth, building in the open</title>
+<meta name="description" content="Hemanth is a software engineer and 0-to-1 builder. Currently shipping justyap, voice typing for every Linux app.">
+<link rel="canonical" href="https://hemanthgangula.github.io/">
+<meta property="og:title" content="Hemanth, building in the open">
+<meta property="og:description" content="Software engineer, 0-to-1 builder. Now shipping justyap.">
+<meta property="og:url" content="https://hemanthgangula.github.io/">
+<meta name="theme-color" content="#0c0b0d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0c0b0d;--panel:#16151a;--line:#26242b;--text:#eeebe6;--muted:#a19d96;--faint:#6f6b66;--accent:#d97857}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--text);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;display:flex}
+main{margin:auto;width:100%;max-width:720px;padding:64px 24px}
+.tag{font:500 12.5px/1 "JetBrains Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:10px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 rgba(217,120,87,.6);animation:pulse 2.4s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(217,120,87,0)}100%{box-shadow:0 0 0 0 rgba(217,120,87,0)}}
+h1{font:400 clamp(48px,9vw,84px)/1 "Instrument Serif",Georgia,serif;margin:26px 0 22px;letter-spacing:-.01em}
+h1 em{color:var(--accent)}
+p.lede{font-size:18.5px;color:#d6d2cb;margin:0 0 44px;max-width:32em}
+.label{font:500 12px "JetBrains Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin:0 0 12px}
+a.card{display:block;text-decoration:none;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px 24px;transition:border-color .2s,transform .2s}
+a.card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.card .name{font-weight:800;font-size:22px;letter-spacing:-.03em}
+.card .name b{color:var(--accent)}
+.card .what{color:#cfcbc4;margin:6px 0 10px}
+.card .meta{font:13px "JetBrains Mono",monospace;color:var(--faint)}
+.bench{margin-top:14px;border:1px dashed var(--line);border-radius:16px;padding:18px 24px;color:var(--muted);font-size:15px}
+.bench code{font-family:"JetBrains Mono",monospace;color:var(--faint)}
+.caret{display:inline-block;width:8px;height:15px;background:var(--accent);vertical-align:-2px;margin-left:4px;animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+nav{margin-top:48px;display:flex;gap:22px;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;font-size:15px;border-bottom:1px solid var(--line);padding-bottom:2px}
+nav a:hover{color:var(--text);border-color:var(--accent)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main>
+  <div class="tag"><span class="dot"></span>Building in the open</div>
+  <h1>Hemanth is <em>shipping</em>, not decorating.</h1>
+  <p class="lede">Software engineer and 0-to-1 builder. This site is getting rebuilt later. The work isn't waiting for it.</p>
+
+  <p class="label">Now shipping</p>
+  <a class="card" href="/justyap/">
+    <div class="name">just<b>yap</b></div>
+    <div class="what">Voice typing for every Linux app, using Claude Code's built-in /voice.</div>
+    <div class="meta">open source · python · latest release v0.1.3</div>
+  </a>
+  <div class="bench">Next on the bench: <code>still in the terminal</code><span class="caret"></span></div>
+
+  <nav>
+    <a href="https://github.com/HemanthGangula">GitHub</a>
+    <a href="https://x.com/hemanthgangula_">X</a>
+    <a href="https://mastodon.social/@hemanth_g" rel="me">Mastodon</a>
+  </nav>
+</main>
+</body>
+</html>
